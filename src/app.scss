@@ -1,0 +1,128 @@
+/* stylelint-disable selector-type-no-unknown */
+:root,
+page {
+	--primary-color: #386df8;
+	--primary-color-end: #94adeb;
+	--public-placeholder-color: #c8c9cc;
+	--public-text-color: #333333;
+	--public-text-size: 12px;
+	/** nutui reset */
+	--nut-badge-background-color: #fa2c19;
+	--nut-primary-color: var(--primary-color);
+	--nut-primary-color-end: var(--primary-color-end);
+	--nut-text-color: var(--public-text-color);
+	--nut-font-size-1: var(--public-text-size);
+	--nut-uploader-picture-width: 110px;
+	--nut-uploader-picture-height: 110px;
+}
+
+page,
+body {
+	background: #f2f2f2;
+	color: var(--public-text-color);
+}
+
+view,
+div {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--public-placeholder-color);
+	font-size: var(--public-text-size);
+}
+
+.view-flex {
+	display: flex;
+	align-items: center;
+}
+
+.view-flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.components-uploader-box {
+	padding-top: 6px;
+
+	.picture {
+		max-width: 62px;
+		max-height: 62px;
+
+		.nut-uploader__preview-img {
+			width: 100%;
+			height: 100%;
+		}
+
+		image {
+			max-width: 62px;
+			max-height: 62px;
+		}
+	}
+}
+
+.nut-tabs__list {
+	background-color: #fff;
+}
+
+.nut-tabs {
+	.nut-tab-pane {
+		padding: 0;
+	}
+
+	.nut-tabs__titles .nut-tabs__titles-item.active .nut-tabs__titles-item__line {
+		background-color: var(--nut-primary-color);
+	}
+
+	.nut-tabs__titles .nut-tabs__titles-item.active {
+		color: var(--nut-primary-color);
+	}
+}
+
+.input-placeholder {
+	color: var(--public-placeholder-color);
+}
+/**  form样式重置 */
+.nut-form {
+	.error {
+		margin-bottom: 24px;
+	}
+
+	.nut-form-item {
+		position: relative;
+
+		.nut-form-item__body__tips {
+			position: absolute;
+			z-index: 9;
+			width: 100%;
+			padding-left: 14px;
+			left: 0;
+			bottom: -24px;
+			font-weight: 400;
+			font-size: 12px;
+			color: #ff1f1f;
+			line-height: 20px;
+		}
+	}
+}
+
+.components-card {
+	.default {
+		color: #878789 !important;
+	}
+
+	.fail {
+		color: #ff1f1f !important;
+	}
+
+	.success {
+		color: #31cc83 !important;
+	}
+
+	.waiting {
+		color: #386df8 !important;
+	}
+}
