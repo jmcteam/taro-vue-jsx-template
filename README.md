@@ -63,7 +63,7 @@ API_URL='https://xxx.lexing.com'
   - `slot`需要`setup`的第二个回调参数中使用slot['default/xx']和taroComponents下面的Slot搭配使用
   - 建议简单的`slot`都采用`JSX`的方式传入
 - 内置组件：
-  - `container`: 页面公共容器
+  - `container`: 页面公共容器1
   - `titleBar`: 自定义头部标题
 
 ### 代码模板
